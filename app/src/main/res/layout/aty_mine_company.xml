@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="@color/main_color"
+    android:orientation="vertical">
+
+    <include layout="@layout/in_head" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff"
+        android:orientation="vertical"
+        android:paddingBottom="40px"
+        android:paddingLeft="40px">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40px"
+            android:text="机构入驻官网"
+            android:textColor="#444"
+            android:textSize="43px" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30px"
+            android:text="www.supai.com"
+            android:textColor="#999"
+            android:textSize="34px" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="123px"
+        android:layout_marginTop="30px"
+        android:background="#fff"
+        android:paddingLeft="40px"
+        android:paddingRight="40px">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="已入驻机构"
+            android:textColor="#444"
+
+            android:textSize="43px" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_alignParentBottom="true"
+            android:background="#d9d9d9" />
+    </RelativeLayout>
+
+    <com.toocms.dink5.mylibrary.view.MyTwinklingRefreshLayout
+        android:id="@+id/swipeRefreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#eff3f6"
+        app:tr_head_height="100dp"
+        app:tr_wave_height="180dp">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#eff3f6" />
+
+    </com.toocms.dink5.mylibrary.view.MyTwinklingRefreshLayout>
+</LinearLayout>

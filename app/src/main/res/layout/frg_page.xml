@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_color">
+
+    <RelativeLayout
+        android:id="@+id/relay_head"
+        android:layout_width="match_parent"
+        android:layout_height="159px"
+        android:background="#f2f2f2">
+
+        <ImageView
+            android:id="@+id/imgv_home_logo"
+            android:layout_width="76px"
+            android:layout_height="76px"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="40px"
+            android:src="@drawable/ic_home_logo" />
+
+        <RelativeLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="86px"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="30px"
+            android:layout_marginRight="40px"
+            android:layout_toRightOf="@+id/imgv_home_logo"
+            android:background="@drawable/shape_search"
+            android:fitsSystemWindows="true"
+            android:focusableInTouchMode="true">
+
+            <ImageView
+                android:id="@+id/imgv_search"
+                android:layout_width="44px"
+                android:layout_height="44px"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="46px"
+                android:scaleType="fitXY"
+                android:src="@drawable/ic_home_search" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="30px"
+                android:layout_marginRight="30px"
+                android:layout_toRightOf="@+id/imgv_search"
+                android:background="#e5e6e7"
+                android:hint="搜索"
+                android:textColor="#444"
+                android:textCursorDrawable="@drawable/shap_editext_c"
+                android:textColorHint="#ccc"
+                android:textSize="40px" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_alignParentBottom="true"
+            android:background="#d9d9d9" />
+    </RelativeLayout>
+
+    <com.toocms.dink5.mylibrary.view.MyTwinklingRefreshLayout
+        android:id="@+id/swipeRefreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/relay_head"
+        android:background="@color/main_color"
+        app:tr_head_height="100dp"
+        app:tr_wave_height="180dp">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/main_color" />
+
+    </com.toocms.dink5.mylibrary.view.MyTwinklingRefreshLayout>
+
+    <com.toocms.dink5.mylibrary.commonwidget.LoadingTip
+        android:id="@+id/loadedTip"
+        android:layout_width="match_parent"
+        android:layout_below="@id/relay_head"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:gravity="center" />
+</RelativeLayout>

@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ic_login_bg"
+    android:fitsSystemWindows="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="159px"
+            android:paddingLeft="40px"
+            android:paddingRight="40px">
+
+            <RelativeLayout
+                android:id="@+id/relay_back"
+                android:layout_width="100px"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:layout_width="28px"
+                    android:layout_height="50px"
+                    android:layout_centerInParent="true"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/ic_back4" />
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="455px"
+            android:layout_height="455px"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/shape_yuan2">
+
+            <RelativeLayout
+                android:layout_width="320px"
+                android:layout_height="320px"
+                android:layout_centerInParent="true"
+                android:background="@drawable/shape_yuan2">
+
+                <ImageView
+                    android:layout_width="172px"
+                    android:layout_height="172px"
+                    android:layout_centerInParent="true"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/ic_wei3" />
+
+                <ImageView
+                    android:layout_width="57px"
+                    android:layout_height="57px"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginBottom="80px"
+                    android:layout_marginRight="80px"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/ic_wei2" />
+
+            </RelativeLayout>
+        </RelativeLayout>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="170px"
+            android:layout_marginTop="82px"
+            android:text="手机号"
+            android:textColor="#fff"
+            android:textSize="43px" />
+
+        <EditText
+            android:id="@+id/login_edit_username"
+            android:layout_width="match_parent"
+            android:layout_height="100px"
+            android:layout_marginLeft="170px"
+            android:layout_marginRight="170px"
+            android:background="@null"
+            android:drawableBottom="@drawable/selector_editext"
+            android:drawablePadding="12px"
+            android:gravity="bottom"
+            android:hint="请输入手机号码"
+            android:inputType="phone"
+            android:maxLength="11"
+            android:maxLines="1"
+            android:textColorHint="#9fff"
+            android:textCursorDrawable="@drawable/shap_editext_c"
+            android:textSize="34px" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="170px"
+            android:layout_marginTop="72px"
+            android:text="验证码"
+            android:textColor="#fff"
+            android:textSize="43px" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100px"
+            android:layout_marginLeft="170px"
+            android:layout_marginRight="170px"
+            android:orientation="horizontal">
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="100px"
+                android:layout_weight="1"
+                android:background="@null"
+                android:drawableBottom="@drawable/selector_editext"
+                android:drawablePadding="12px"
+                android:gravity="bottom"
+                android:hint="4-6位验证码"
+                android:inputType="phone"
+                android:maxLength="11"
+                android:maxLines="1"
+                android:textColorHint="#9fff"
+                android:textCursorDrawable="@drawable/shap_editext_c"
+                android:textSize="34px" />
+
+            <TextView
+                android:layout_width="190px"
+                android:layout_height="94px"
+                android:layout_gravity="bottom"
+                android:background="@drawable/shape_search"
+                android:gravity="center"
+                android:text="获取"
+                android:textColor="@color/main_color2"
+                android:textSize="37px" />
+        </LinearLayout>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="140px"
+            android:layout_marginLeft="170px"
+            android:layout_marginRight="170px"
+            android:layout_marginTop="72px"
+            android:background="@drawable/shape_login"
+            android:gravity="center"
+            android:text="绑定手机号并登录"
+            android:textColor="#9fff"
+            android:textSize="52px" />
+
+
+    </LinearLayout>
+</RelativeLayout>

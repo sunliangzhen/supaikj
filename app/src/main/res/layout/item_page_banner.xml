@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:CircleIndicator="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#fff"
+    android:orientation="vertical">
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:id="@+id/relay_top"
+        android:layout_width="match_parent"
+        android:layout_height="460px">
+
+        <com.toocms.dink5.mylibrary.loopviewpager.LoopViewPager
+            android:id="@+id/item_viewpager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <com.toocms.dink5.mylibrary.loopviewpager.CircleIndicator
+            android:id="@+id/item_indicator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="40px"
+            android:orientation="horizontal"
+            CircleIndicator:ci_height="3dp"
+            CircleIndicator:ci_margin="3dp"
+            CircleIndicator:ci_width="12dp" />
+    </com.zhy.autolayout.AutoRelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="280px"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_horizontal|bottom"
+            android:orientation="vertical"
+            android:paddingBottom="30px">
+
+            <ImageView
+                android:layout_width="208px"
+                android:layout_height="146px"
+                android:scaleType="fitXY"
+                android:src="@drawable/ic_home_01" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20px"
+                android:text="艺术品"
+                android:textColor="#444"
+                android:textSize="40px" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_horizontal|bottom"
+            android:orientation="vertical"
+            android:paddingBottom="30px">
+
+            <ImageView
+                android:layout_width="198px"
+                android:layout_height="160px"
+                android:scaleType="fitXY"
+                android:src="@drawable/ic_home_02" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20px"
+                android:text="资产"
+                android:textColor="#444"
+                android:textSize="40px" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_horizontal|bottom"
+            android:orientation="vertical"
+            android:paddingBottom="30px">
+
+            <ImageView
+                android:layout_width="146px"
+                android:layout_height="166px"
+                android:scaleType="fitXY"
+                android:src="@drawable/ic_home_03" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20px"
+                android:text="服务"
+                android:textColor="#444"
+                android:textSize="40px" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="172px"
+        android:background="#eff3f6"
+        android:orientation="horizontal"
+        android:padding="14px">
+
+        <ImageView
+            android:layout_width="340px"
+            android:layout_height="144px"
+            android:layout_gravity="center_vertical"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_home_04" />
+
+        <ImageView
+            android:layout_width="340px"
+            android:layout_height="144px"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="14px"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_home_05" />
+
+        <ImageView
+            android:layout_width="340px"
+            android:layout_height="144px"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="14px"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_home_06" />
+    </LinearLayout>
+</LinearLayout>

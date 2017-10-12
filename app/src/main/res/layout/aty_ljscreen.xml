@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F4F5F6"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="130px"
+        android:background="#fff">
+
+
+        <ImageView
+            android:id="@+id/imgv_back"
+            android:layout_width="132px"
+            android:layout_height="132px"
+            android:layout_centerVertical="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/lj_ic_cha"
+            android:visibility="visible" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="添加现货—筛选"
+            android:textColor="#000"
+            android:textSize="45px" />
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_alignParentBottom="true"
+            android:background="#ededed" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="300px"
+        android:background="#fff"
+        android:padding="40px">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="价格区间"
+            android:textColor="#000"
+            android:textSize="40px" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <EditText
+                android:layout_width="400px"
+                android:layout_height="80px"
+                android:background="@drawable/editext_bg2"
+                android:gravity="center"
+                android:hint="最低价"
+                android:maxLines="1"
+                android:textColor="#000"
+                android:textColorHint="#999"
+                android:textSize="35px" />
+
+            <View
+                android:layout_width="70px"
+                android:layout_height="1px"
+                android:layout_marginLeft="30px"
+                android:layout_marginRight="30px"
+                android:background="#c0c0c0" />
+
+            <EditText
+                android:layout_width="400px"
+                android:layout_height="80px"
+                android:background="@drawable/editext_bg2"
+                android:gravity="center"
+                android:hint="最低价"
+                android:maxLines="1"
+                android:textColor="#000"
+                android:textColorHint="#999"
+                android:textSize="35px" />
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#ededed" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginTop="100px"
+        android:background="#ededed" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="120px"
+        android:background="#fff"
+        android:paddingLeft="40px"
+        android:paddingRight="40px">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="分类"
+            android:textColor="#000"
+            android:textSize="40px" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="全部"
+            android:textColor="#999"
+            android:textSize="40px" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#ededed" />
+</LinearLayout>

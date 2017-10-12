@@ -1,0 +1,369 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:windows2="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.spkj.supai.view.ScrollViewExtend
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="160px"
+                android:background="#B68C47">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="当月销售额"
+                    android:textColor="#fff"
+                    android:textSize="50px" />
+
+                <ImageView
+                    android:id="@+id/imgv_02"
+                    android:layout_width="132px"
+                    android:layout_height="132px"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="30px"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/ic_home_more" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#B68C47"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="7900.00"
+                    android:textColor="#fff"
+                    android:textSize="70px"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30px"
+                    android:gravity="center">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="最低利润：  65%"
+                        android:textColor="#9fff"
+                        android:textSize="40px" />
+
+                    <ImageView
+                        android:layout_width="48px"
+                        android:layout_height="48px"
+                        android:layout_marginLeft="30px"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/ic_home_ljsign" />
+
+                </LinearLayout>
+
+                <android.support.design.widget.TabLayout
+                    android:id="@+id/sliding_tabs"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_marginTop="10dp"
+                    android:background="#B68C47"
+                    app:tabBackground="@color/status_main2"
+                    app:tabIndicatorColor="#ffffff"
+                    app:tabIndicatorHeight="2dp"
+                    app:tabMode="fixed"
+                    app:tabSelectedTextColor="#fff"
+                    app:tabTextAppearance="@style/MyTabLayoutTextAppearanceInverse2" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="#99ffffff" />
+
+                <android.support.v4.view.ViewPager
+                    android:id="@+id/vp_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"></android.support.v4.view.ViewPager>
+
+                <com.spkj.supai.view.LineRelayout
+                    android:id="@+id/line_chart"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/shape_homebg" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#9b9b9b"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="180px"
+                    android:layout_marginBottom="1px"
+                    android:background="#9b9b9b"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="1px"
+                        android:layout_weight="1"
+                        android:background="#fff"
+                        android:gravity="center">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="可提现额2"
+                            android:textColor="#9b9b9b"
+                            android:textSize="35px" />
+
+                        <TextView
+                            fonts="a"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="50px"
+                            android:text="12800.00"
+                            android:textColor="#B68D50"
+                            android:textSize="70px"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="#fff"
+                        android:gravity="center">
+
+                        <TextView
+                            fonts="a"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="今日分红"
+                            android:textColor="#9b9b9b"
+                            android:textSize="35px" />
+
+                        <TextView
+                            fonts="a"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="50px"
+                            android:text="18.90"
+                            android:textColor="#B65454"
+                            android:textSize="70px"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="180px"
+                    android:background="#9b9b9b"
+                    android:orientation="horizontal"
+                    android:paddingBottom="1px">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="1px"
+                        android:layout_weight="1"
+                        android:background="#fff"
+                        android:gravity="center">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="现贷款"
+                            android:textColor="#9b9b9b"
+                            android:textSize="35px" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="50px"
+                            android:text="12800.00"
+                            android:textColor="#B68D50"
+                            android:textSize="70px"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="#fff"
+                        android:gravity="center">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="今日分红"
+                            android:textColor="#9b9b9b"
+                            android:textSize="35px" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="50px"
+                            android:text="12.00"
+                            android:textColor="#B65454"
+                            android:textSize="70px"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="400px"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+
+                    <RelativeLayout
+                        android:layout_width="220px"
+                        android:layout_height="220px"
+                        android:layout_centerInParent="true">
+
+                        <com.spkj.supai.view.CycleView
+                            android:id="@+id/arc1"
+                            android:layout_width="100px"
+                            android:layout_height="100px"
+                            android:layout_centerInParent="true"
+                            windows2:background2="#ebebeb"
+                            windows2:layout_width2="10px"
+                            windows2:progressDrawable2="#B68D50"
+                            windows2:thumbSize2="30" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:layout_marginTop="20px"
+                            android:text="3679100"
+                            android:textColor="#B68D50"
+                            android:textSize="35px" />
+                    </RelativeLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20px"
+                        android:text="账户余额"
+                        android:textColor="#9b9b9b"
+                        android:textSize="35px" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+
+                    <RelativeLayout
+                        android:layout_width="220px"
+                        android:layout_height="220px"
+                        android:layout_centerInParent="true">
+
+                        <com.spkj.supai.view.CycleView
+                            android:id="@+id/arc2"
+                            android:layout_width="100px"
+                            android:layout_height="100px"
+                            android:layout_centerInParent="true"
+                            windows2:background2="#ebebeb"
+                            windows2:layout_width2="10px"
+                            windows2:progressDrawable2="#B68D50"
+                            windows2:thumbSize2="30" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:layout_marginTop="20px"
+                            android:text="3679100"
+                            android:textColor="#B68D50"
+                            android:textSize="35px" />
+                    </RelativeLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20px"
+                        android:text="账户余额"
+                        android:textColor="#9b9b9b"
+                        android:textSize="35px" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="220px"
+                        android:layout_height="220px"
+                        android:layout_centerInParent="true">
+
+                        <com.spkj.supai.view.CycleView
+                            android:id="@+id/arc3"
+                            android:layout_width="100px"
+                            android:layout_height="100px"
+                            android:layout_centerInParent="true"
+                            windows2:background2="#ebebeb"
+                            windows2:layout_width2="10px"
+                            windows2:progressDrawable2="#B68D50"
+                            windows2:thumbSize2="30" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:layout_marginTop="20px"
+                            android:text="3679100"
+                            android:textColor="#B68D50"
+                            android:textSize="35px" />
+                    </RelativeLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20px"
+                        android:text="账户余额"
+                        android:textColor="#9b9b9b"
+                        android:textSize="35px" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+    </com.spkj.supai.view.ScrollViewExtend>
+
+</FrameLayout>

@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.spkj.supai">
+
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <!--<uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />-->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.WRITE_APN_SETTINGS" />
+    <uses-permission android:name="android.permission.DOWNLOAD_WITHOUT_NOTIFICATION" />
+
+    <application
+        android:name=".app.SpkjApplication"
+        android:allowBackup="true"
+        android:hardwareAccelerated="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppBaseTheme">
+
+        <meta-data
+            android:name="com.taobao.android.hotfix.IDSECRET"
+            android:value="24650130-1" />
+        <meta-data
+            android:name="com.taobao.android.hotfix.APPSECRET"
+            android:value="c48ff5b842465eb8d94ab57b8ae3d8d3" />
+        <meta-data
+            android:name="com.taobao.android.hotfix.RSASECRET"
+            android:value="MIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQCWCfqIgxsyHFNiRV0jDKbFcqWH2LCwJHNR4gGW9UyFuoZ6tI24L0zAUNfnzB/qTtck+AZovjbqhq0fTJAwLDFCnyhOM8H/WrgFm3MKRDqhAdF33vqh0mMFcX5q8bSMr3ore3I+ZGl9puj2qpmF2oJXb+D6++2+forflSwWQbwR8MN0TLRNs3aGmmMp2vS1xTBRiO7c2ws2Uag6TOgspSyowbmYfFk2jxDMeKBaQwO/6/LHkLzkoTPEygJfOHv02fGaGKom39MHxqb1nvwgJK/hirtJJx15ffOsy9jP2fyIsFyo00hR+za1oIOiILnICWstkrGFy6C/Ub2JZuY2tnWpAgMBAAECggEAb+cLWytlai9kJWQUfeKes565RKNhzE2zULvecaeMJiUizXvCQz/L35esH+7HUurwXVs69H4B2VMO5cwlsjgTmVu5JPJHW1te6pew6lRO4ezIPL4qcezG+7VVExAol9D8rleIsm4Tm6qUD/zXOdTp56rCwo6JF82rZ+wLEKKAUWP6HgBCXskZSRZoXjJqPKAQjhcrA5bqckooE5FFchqkp/sa8MX0PcW66aRyhcuxQZpsbMbsF0tImMp2VCEksdnEM9gGzUOY9CLAKcnSBOspBxOeC7lAzrvxbt0EtN8A8WHuBuLalt4/IGwRJGnXmVdGDPdnB/vQRd7eFlNy7lmsbQKBgQDUxAkdaU71g/Igy3R501JDsYOzzoWQLFgWh9vOcgXySl9t5SOMF39EKW6GE78ka5ZDD60JQenvVirCmzGeTumFTQ0/OrPKo5ZoALOlPL1yH2xL4v1rlXl/dZUjFvLXsF7yq7NedME0L3ocsopoyAKzz3Z+Xg9EFaBZIfjYY/D/3wKBgQC0hu2lh9A+G0etxPicwTicIrNpPwAa7mGHsevlpWZEXRjInR6ryAVo83f7n/FoVsA3Jtuway/P+kW8VFodljFrUCjf8i1fVtb+UaCDaxE7iU93nrsP4FY4QOEvW1Um1/pvGfkXXPUt/xIT85689UjyWaft1f2r2V+q7MbxM60bdwKBgCkBq1wOytgI2Sa277j3IJjJYr/J4vYZhdS51IRid4DuEpxkmEhM0wt5DMMslR9Y2PoN0GTDXmnxaoZdUN/ZB6rYYeA42SQKCVf8IqOLJFwVcFLj6cHNakBFkjvUFXO6m2Ib85MV35LGP7u+MWzmd5beOlE6oaiWnnPvVz2lbXJzAoGBAIccCNZ/bApfbmkOZycisZShn/cf8Js3WAUv0yZ/gKefqYHTnfXg8LOYrG7FSO7XJmrgiUFjJ1iXrgOCeiN0mi3/w2fAH9cf7i5OtzxEMJSHctNLGCOMudrGLAK+b19v+32VSckDiHhRU51dEqvHRD4lfbpSEtXADYqmRUqWa3OHAoGBAM5MQCidSE/IIGCiKIkWAat9CEZxv2dQoGGacZOfJKaJsgWoC6nqc6os62vVKmBbrWb8TWpNve03rCJuMfk/07aHrz7TkSvK6RTPYM8ZXjhiw5iJ21sMgH6IBHfAh736RItu7USP+PQEAiKM0LYWMgrshAZfzkE2irzUoNjd4Fz0" />
+
+        <meta-data
+            android:name="design_width"
+            android:value="1080" />
+        <meta-data
+            android:name="design_height"
+            android:value="1920" />
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="58db5b113eae25618e0013f2" />
+
+
+        <activity android:name=".ui.SplashAty">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".ui.MainAty" />
+        <activity android:name=".ui.GuideAty" />
+        <activity android:name=".ui.lar.LoginAty" />
+        <activity android:name=".ui.lar.LoginMsgAty" />
+        <activity android:name=".ui.lar.LoginWeiAty" />
+        <activity android:name=".ui.lar.ForgetPassAty" />
+        <activity android:name=".ui.lar.ForgetPassTwoAty" />
+        <activity android:name=".ui.mine.account.MineAccountAty" />
+        <activity android:name=".ui.mine.cp.MineCpAty" />
+        <activity android:name=".ui.mine.buy.MineBuyAty" />
+        <activity android:name=".ui.mine.buy.OrderDetailsAty" />
+        <activity android:name=".ui.mine.set.MineSetAty" />
+        <activity android:name=".ui.mine.set.MineAboutAty" />
+        <activity android:name=".ui.mine.set.ResetPhoneAty" />
+        <activity android:name=".ui.mine.set.ResetPhoneTwoAty" />
+        <activity android:name=".ui.mine.set.ResetPassAty" />
+        <activity android:name=".ui.mine.set.ResetNicknameAty" />
+        <activity android:name=".ui.mine.address.MineAddressAty" />
+        <activity android:name=".ui.mine.address.MineAddressEidtAty" />
+        <activity android:name=".ui.mine.company.MineCompanyAty" />
+        <activity android:name=".ui.mine.entrust.MineEntrustAty" />
+        <activity android:name=".ui.mine.entrust.EntrustDetailsAty" />
+        <activity android:name=".ui.mine.msg.MineMsgAty" />
+        <activity android:name=".ui.mine.collection.MineCollectionAty" />
+        <activity android:name=".ui.mine.follow.MineFollowAty" />
+        <activity android:name=".MainActivity" />
+        <activity android:name=".ui.lar.LoginljAty" />
+        <activity android:name=".ui.lar.RegisterljAty" />
+        <activity android:name=".ui.lar.RegisterljNextAty" />
+        <activity android:name=".ui.lar.ForgetPassljAty" />
+        <activity android:name=".ui.house.AddHouseAty" />
+        <activity android:name=".ui.msg.TestTransformMatrixActivity" />
+        <activity android:name=".ui.house.ScreenAty" />
+        <activity android:name=".ui.house.NowOrderAty" />
+        <activity android:name=".ui.house.HouseDetailsAty" />
+        <activity android:name=".ui.msg.MsgActivityAty" />
+
+
+        <activity
+            android:name=".wxapi.WXEntryActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+        <activity
+            android:name="com.yalantis.ucrop.UCropActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+
+        <service android:name="com.spkj.supai.s.AppUpdateService" />
+        <service android:name="com.spkj.supai.appconfig.DownLoadService" />
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="com.yll520wcf.test.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <!--元数据-->
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+    </application>
+
+</manifest>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="#fff"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/img_tip_logo"
+        android:layout_width="408px"
+        android:layout_height="436px"
+        android:scaleType="fitXY"
+        android:src="@drawable/ic_neterror"
+        android:visibility="visible"/>
+
+    <ProgressBar
+        android:id="@+id/progress"
+        android:layout_width="100px"
+        android:layout_height="100px"
+        android:indeterminateBehavior="repeat"
+        android:indeterminateOnly="true"
+        />
+
+    <TextView
+        android:id="@+id/tv_tips"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="28px"
+        android:visibility="gone"
+        android:text="加载中..."
+        android:textColor="#000"
+        android:textSize="28px"/>
+    <TextView
+        android:id="@+id/tv_lar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="28px"
+        android:visibility="gone"
+        android:text="登陆/注册"
+        android:textColor="@color/main_color"
+        android:textSize="45px"/>
+
+    <TextView
+        android:id="@+id/bt_operate"
+        android:layout_width="288px"
+        android:layout_height="78px"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/ic_reset"
+        android:gravity="center"
+        android:textColor="#fff"
+        android:textSize="28px"
+        android:visibility="visible"/>
+</com.zhy.autolayout.AutoLinearLayout>

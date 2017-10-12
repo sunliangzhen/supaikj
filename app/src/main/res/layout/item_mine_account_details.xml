@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="185px"
+    android:background="#fff">
+
+    <TextView
+        android:id="@+id/item_tv_type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40px"
+        android:layout_marginTop="40px"
+        android:text="保证金支付"
+        android:textColor="#444"
+        android:textSize="43px" />
+
+    <TextView
+        android:id="@+id/item_tv_money"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="40px"
+        android:layout_marginTop="40px"
+        android:text="—200元"
+        android:textColor="#444"
+        android:textSize="43px" />
+
+    <TextView
+        android:id="@+id/item_tv_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/item_tv_type"
+        android:layout_marginLeft="40px"
+        android:layout_marginTop="28px"
+        android:text="2017-01-01 12:00:01"
+        android:textColor="#999"
+        android:textSize="34px" />
+
+    <TextView
+        android:id="@+id/item_tv_payT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/item_tv_type"
+        android:layout_marginRight="40px"
+        android:layout_marginTop="28px"
+        android:text="2017-01-01 12:00:01"
+        android:textColor="#999"
+        android:textSize="34px" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_alignParentBottom="true"
+        android:background="#d9d9d9" />
+</RelativeLayout>

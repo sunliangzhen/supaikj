@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/relay_linerout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/shape_homebg">
+
+
+    <com.spkj.supai.view.LinerView
+        android:id="@+id/linerview_my"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_homebg" />
+
+    <View
+        android:id="@+id/view_myWrite"
+        android:layout_width="30px"
+        android:layout_height="30px"
+        android:background="@drawable/shape_wirte" />
+
+    <RelativeLayout
+        android:id="@+id/relay_my"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <View
+            android:id="@+id/view_lineY"
+            android:layout_width="5px"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:background="#fff" />
+
+        <View
+            android:id="@+id/view_my"
+            android:layout_width="50px"
+            android:layout_height="50px"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/shape_line" />
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,467 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_bg"
+    android:fitsSystemWindows="true">
+
+    <RelativeLayout
+        android:id="@+id/relay_top"
+        android:layout_width="match_parent"
+        android:layout_height="130px"
+        android:background="#fff">
+
+
+        <ImageView
+            android:id="@+id/imgv_back"
+            android:layout_width="132px"
+            android:layout_height="132px"
+            android:layout_centerVertical="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/lj_ic_back"
+            android:visibility="visible" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="店家注册"
+            android:textColor="#000"
+            android:textSize="45px" />
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_alignParentBottom="true"
+            android:background="#dbdbdb" />
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/relay_top">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical">
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginTop="40px"
+                android:background="#dbdbdb" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="140px"
+                android:background="#fff">
+
+                <TextView
+                    android:id="@+id/tv_01"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="50px"
+                    android:text="店家名称"
+                    android:textColor="#000"
+                    android:textSize="40px" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="30px"
+                    android:layout_toRightOf="@id/tv_01"
+                    android:background="@null"
+                    android:drawablePadding="12px"
+                    android:gravity="center_vertical"
+                    android:hint=""
+                    android:inputType="phone"
+                    android:maxLength="11"
+                    android:maxLines="1"
+                    android:textColor="#000"
+                    android:textColorHint="#bababa"
+                    android:textCursorDrawable="@drawable/shap_editext_c"
+                    android:textSize="45px" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="50px"
+                    android:background="#dbdbdb" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="140px"
+                android:background="#fff">
+
+                <TextView
+                    android:id="@+id/tv_02"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="50px"
+                    android:text="营业执照"
+                    android:textColor="#000"
+                    android:textSize="40px" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="30px"
+                    android:layout_toRightOf="@id/tv_02"
+                    android:background="@null"
+                    android:drawablePadding="12px"
+                    android:gravity="center_vertical"
+                    android:hint="注册号/统一社会信用代码"
+                    android:inputType="phone"
+                    android:maxLength="11"
+                    android:maxLines="1"
+                    android:textColor="#000"
+                    android:textColorHint="#bababa"
+                    android:textCursorDrawable="@drawable/shap_editext_c"
+                    android:textSize="40px" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_alignParentBottom="true"
+                    android:background="#dbdbdb" />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="120px"
+                android:gravity="center_vertical"
+                android:paddingLeft="50px"
+                android:text="上传店家头像"
+                android:textColor="#bababa"
+                android:textSize="40px" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="#dbdbdb" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="250px"
+                android:background="#fff"
+                android:visibility="visible">
+
+                <ImageView
+                    android:layout_width="144px"
+                    android:layout_height="144px"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="50px"
+                    android:src="@drawable/lj_ic_regiter_01" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_alignParentBottom="true"
+                    android:background="#dbdbdb" />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginTop="40px"
+                android:background="#dbdbdb" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="140px"
+                android:background="#fff">
+
+                <TextView
+                    android:id="@+id/tv_03"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="50px"
+                    android:text="所在地区"
+                    android:textColor="#000"
+                    android:textSize="40px" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="30px"
+                    android:layout_toRightOf="@id/tv_03"
+                    android:background="@null"
+                    android:drawablePadding="12px"
+                    android:gravity="center_vertical"
+                    android:hint=""
+                    android:inputType="phone"
+                    android:maxLength="11"
+                    android:maxLines="1"
+                    android:textColor="#000"
+                    android:textColorHint="#bababa"
+                    android:textCursorDrawable="@drawable/shap_editext_c"
+                    android:textSize="45px" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="50px"
+                    android:background="#dbdbdb" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="140px"
+                android:background="#fff">
+
+                <TextView
+                    android:id="@+id/tv_04"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="50px"
+                    android:text="详细地址"
+                    android:textColor="#000"
+                    android:textSize="40px" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="30px"
+                    android:layout_toRightOf="@id/tv_04"
+                    android:background="@null"
+                    android:drawablePadding="12px"
+                    android:gravity="center_vertical"
+                    android:hint=""
+                    android:inputType="phone"
+                    android:maxLength="11"
+                    android:maxLines="1"
+                    android:textColor="#000"
+                    android:textColorHint="#bababa"
+                    android:textCursorDrawable="@drawable/shap_editext_c"
+                    android:textSize="45px" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_alignParentBottom="true"
+                    android:background="#dbdbdb" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginTop="40px"
+                android:background="#dbdbdb" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="140px"
+                android:background="#fff">
+
+                <TextView
+                    android:id="@+id/tv_05"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="50px"
+                    android:text="联系人"
+                    android:textColor="#000"
+                    android:textSize="40px" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="30px"
+                    android:layout_toRightOf="@id/tv_05"
+                    android:background="@null"
+                    android:drawablePadding="12px"
+                    android:gravity="center_vertical"
+                    android:hint=""
+                    android:inputType="phone"
+                    android:maxLength="11"
+                    android:maxLines="1"
+                    android:textColor="#000"
+                    android:textColorHint="#bababa"
+                    android:textCursorDrawable="@drawable/shap_editext_c"
+                    android:textSize="45px" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="50px"
+                    android:background="#dbdbdb" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="140px"
+                android:background="#fff">
+
+                <TextView
+                    android:id="@+id/tv_06"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="50px"
+                    android:text="联系方式"
+                    android:textColor="#000"
+                    android:textSize="40px" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="30px"
+                    android:layout_toRightOf="@id/tv_06"
+                    android:background="@null"
+                    android:drawablePadding="12px"
+                    android:gravity="center_vertical"
+                    android:hint="支持手机和座机号"
+                    android:inputType="phone"
+                    android:maxLength="11"
+                    android:maxLines="1"
+                    android:textColor="#000"
+                    android:textColorHint="#bababa"
+                    android:textCursorDrawable="@drawable/shap_editext_c"
+                    android:textSize="45px" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_alignParentBottom="true"
+                    android:background="#dbdbdb" />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="120px"
+                android:gravity="center_vertical"
+                android:paddingLeft="50px"
+                android:text="上传营业执照"
+                android:textColor="#bababa"
+                android:textSize="40px"
+                android:visibility="visible" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="#dbdbdb" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="250px"
+                android:background="#fff"
+                android:visibility="visible">
+
+                <ImageView
+                    android:layout_width="144px"
+                    android:layout_height="144px"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="50px"
+                    android:src="@drawable/lj_ic_regiter_01" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_alignParentBottom="true"
+                    android:background="#dbdbdb" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="120px"
+                android:gravity="center_vertical"
+                android:paddingLeft="50px"
+                android:text="上传经营者/企业法人身份证照片正反面"
+                android:textColor="#bababa"
+                android:textSize="40px" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="#dbdbdb" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="250px"
+                android:background="#fff">
+
+                <ImageView
+                    android:layout_width="144px"
+                    android:layout_height="144px"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="50px"
+                    android:src="@drawable/lj_ic_regiter_01" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_alignParentBottom="true"
+                    android:background="#dbdbdb" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="120px"
+                android:gravity="center_vertical"
+                android:paddingLeft="50px"
+                android:text="上传店面照片（至少三张）"
+                android:textColor="#bababa"
+                android:textSize="40px" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="#dbdbdb" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="250px"
+                android:background="#fff">
+
+                <ImageView
+                    android:layout_width="144px"
+                    android:layout_height="144px"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="50px"
+                    android:src="@drawable/lj_ic_regiter_01" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_alignParentBottom="true"
+                    android:background="#dbdbdb" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tv_login"
+                android:layout_width="match_parent"
+                android:layout_height="140px"
+                android:layout_marginTop="150px"
+                android:background="#E9DCCA"
+                android:gravity="center"
+                android:text="下一步"
+                android:textColor="#fff"
+                android:textSize="52px" />
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</RelativeLayout>

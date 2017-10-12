@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="@color/main_color"
+    android:orientation="vertical">
+
+    <include layout="@layout/in_head" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="252px"
+        android:background="#fff"
+        android:paddingLeft="40px"
+        android:paddingRight="40px">
+
+        <ImageView
+            android:id="@+id/imgv"
+            android:layout_width="172px"
+            android:layout_height="172px"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="40px"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_wei3" />
+
+        <TextView
+            android:id="@+id/id_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="42px"
+            android:layout_marginTop="58px"
+            android:layout_toRightOf="@id/imgv"
+            android:maxLines="1"
+            android:text="速拍科技"
+            android:textColor="#444"
+            android:textSize="43px" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/id_name"
+            android:layout_marginLeft="42px"
+            android:layout_marginRight="66px"
+            android:layout_marginTop="14px"
+            android:layout_toRightOf="@id/imgv"
+            android:maxLines="2"
+            android:text="速拍科技速拍科技速拍科技速拍科技速拍科技速拍科技速拍科技速拍科技"
+            android:textColor="#999"
+            android:textSize="34px" />
+
+        <ImageView
+            android:layout_width="28px"
+            android:layout_height="50px"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_back1" />
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30px"
+        android:background="#fff"
+        android:orientation="vertical"
+        android:paddingBottom="40px"
+        android:paddingLeft="40px"
+        android:paddingRight="40px">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40px"
+            android:text="说明"
+            android:textColor="#444"
+            android:textSize="43px" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20px"
+            android:text="说明说明说明说明说明说明说明说明说明说明说明说明说明说明说明说明说明说明说明说明说明说明说明说明说明说明说明说明说明说明说明说明说明说明"
+            android:textColor="#999"
+            android:textSize="34px" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30px"
+        android:background="#fff"
+        android:orientation="vertical"
+        android:paddingBottom="40px"
+        android:paddingLeft="40px"
+        android:paddingRight="40px">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40px"
+            android:text="照片"
+            android:textColor="#444"
+            android:textSize="43px" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20px"
+            android:background="#fff" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30px"
+        android:background="#fff"
+        android:orientation="vertical"
+        android:paddingBottom="40px"
+        android:paddingLeft="40px"
+        android:paddingRight="40px">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40px"
+            android:text="联系方式"
+            android:textColor="#444"
+            android:textSize="43px" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20px"
+            android:text="联系人：ss"
+            android:textColor="#999"
+            android:textSize="34px" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20px"
+            android:text="联系电话：183-2204-6137"
+            android:textColor="#999"
+            android:textSize="34px" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20px"
+            android:text="创建时间：2017-01-01"
+            android:textColor="#999"
+            android:textSize="34px" />
+    </LinearLayout>
+</LinearLayout>

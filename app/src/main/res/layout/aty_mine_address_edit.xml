@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_color"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <include layout="@layout/in_head" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="127px"
+        android:background="@color/white"
+        android:paddingLeft="40px"
+        android:paddingRight="40px">
+
+        <TextView
+            android:id="@+id/tv_01"
+            android:layout_width="180px"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="收货人"
+            android:textColor="#444"
+            android:textSize="43px" />
+
+        <EditText
+            android:id="@+id/et_name"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="58px"
+            android:layout_toRightOf="@+id/tv_01"
+            android:background="@color/transparent"
+            android:hint="姓名"
+            android:textColor="#999"
+            android:textColorHint="#999"
+            android:textCursorDrawable="@drawable/shap_editext_c"
+            android:textSize="43px" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_alignParentBottom="true"
+            android:background="#d9d9d9" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="127px"
+        android:background="@color/white"
+        android:paddingLeft="40px"
+        android:paddingRight="40px">
+
+        <TextView
+            android:id="@+id/tv_02"
+            android:layout_width="200px"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="联系电话"
+            android:textColor="#444"
+            android:textSize="43px" />
+
+        <EditText
+            android:id="@+id/et_phone"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="58px"
+            android:layout_toRightOf="@+id/tv_02"
+            android:background="@color/transparent"
+            android:hint="联系电话"
+            android:textColor="#999"
+            android:textColorHint="#999"
+            android:textCursorDrawable="@drawable/shap_editext_c"
+            android:textSize="43px" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="127px"
+        android:layout_marginTop="30px"
+        android:background="@color/white"
+        android:paddingLeft="40px"
+        android:paddingRight="40px">
+
+        <TextView
+            android:id="@+id/tv_03"
+            android:layout_width="200px"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="所在区域"
+            android:textColor="#444"
+            android:textSize="43px" />
+
+        <TextView
+            android:id="@+id/tv_address"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="58px"
+            android:layout_toRightOf="@+id/tv_03"
+            android:background="@color/transparent"
+            android:gravity="center_vertical"
+            android:hint="天津市"
+            android:textColor="#999"
+            android:textColorHint="#999"
+            android:textCursorDrawable="@drawable/shap_editext_c"
+            android:textSize="43px" />
+
+        <ImageView
+            android:layout_width="28px"
+            android:layout_height="50px"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_back1" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_alignParentBottom="true"
+            android:background="#d9d9d9" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="127px"
+        android:background="@color/white"
+        android:paddingLeft="40px"
+        android:paddingRight="40px">
+
+        <TextView
+            android:id="@+id/tv_04"
+            android:layout_width="200px"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="所在街道"
+            android:textColor="#444"
+            android:textSize="43px" />
+
+        <TextView
+            android:id="@+id/tv_address2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="58px"
+            android:layout_toRightOf="@+id/tv_04"
+            android:background="@color/transparent"
+            android:gravity="center_vertical"
+            android:hint="友谊路 "
+            android:textColor="#999"
+            android:textColorHint="#999"
+            android:textCursorDrawable="@drawable/shap_editext_c"
+            android:textSize="43px" />
+
+        <ImageView
+            android:layout_width="28px"
+            android:layout_height="50px"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_back1" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_alignParentBottom="true"
+            android:background="#d9d9d9" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="127px"
+        android:background="@color/white"
+        android:paddingLeft="40px"
+        android:paddingRight="40px">
+
+        <TextView
+            android:id="@+id/tv_05"
+            android:layout_width="200px"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="详细地址"
+            android:textColor="#444"
+            android:textSize="43px" />
+
+        <TextView
+            android:id="@+id/tv_address3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="58px"
+            android:layout_toRightOf="@+id/tv_05"
+            android:background="@color/transparent"
+            android:gravity="center_vertical"
+            android:hint="98号公寓 "
+            android:textColor="#999"
+            android:textColorHint="#999"
+            android:textCursorDrawable="@drawable/shap_editext_c"
+            android:textSize="43px" />
+
+        <ImageView
+            android:layout_width="28px"
+            android:layout_height="50px"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_back1" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="127px"
+        android:layout_marginTop="30px"
+        android:background="@color/white"
+        android:paddingLeft="40px"
+        android:paddingRight="40px">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="设置为默认地址"
+            android:textColor="#444"
+            android:textSize="43px" />
+
+        <com.suke.widget.SwitchButton
+            android:id="@+id/switch_button"
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            app:sb_checked_color="@color/main_color2" />
+
+    </RelativeLayout>
+
+</LinearLayout>

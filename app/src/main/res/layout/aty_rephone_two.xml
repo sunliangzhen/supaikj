@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_color"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <include layout="@layout/in_head" />
+
+    <EditText
+        android:id="@+id/et_password"
+        android:layout_width="match_parent"
+        android:layout_height="144px"
+        android:background="@color/white"
+        android:hint="输入新手机号"
+        android:paddingLeft="40px"
+        android:paddingRight="40px"
+        android:textColorHint="#c2c2c2"
+        android:textCursorDrawable="@drawable/shap_editext_c"
+        android:textSize="43px" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#d9d9d9" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="144px"
+        android:background="@color/white">
+
+        <EditText
+            android:id="@+id/et_password2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="40px"
+            android:background="@color/transparent"
+            android:hint="请输入验证码"
+            android:textColorHint="#CCCCCC"
+            android:textCursorDrawable="@drawable/shap_editext_c"
+            android:textSize="43px" />
+
+        <TextView
+            android:id="@+id/tv_get"
+            android:layout_width="172px"
+            android:layout_height="72px"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="40px"
+            android:background="@drawable/shap_02"
+            android:gravity="center"
+            android:text="获取"
+            android:textColor="#FFFFFF"
+            android:textSize="37px" />
+    </RelativeLayout>
+
+</LinearLayout>

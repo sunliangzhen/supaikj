@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="@color/main_color"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/in_top"
+        layout="@layout/in_head" />
+
+    <TextView
+        android:id="@+id/tv_addaddress"
+        android:layout_width="match_parent"
+        android:layout_height="144px"
+        android:layout_alignParentBottom="true"
+        android:background="#C8B08E"
+        android:gravity="center"
+        android:text="添加新地址"
+        android:textColor="#fff"
+        android:textSize="52px" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/tv_addaddress"
+        android:layout_below="@+id/in_top">
+
+        <com.toocms.dink5.mylibrary.view.MyTwinklingRefreshLayout
+            android:id="@+id/swipeRefreshLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#eff3f6"
+            app:tr_head_height="100dp"
+            app:tr_wave_height="180dp">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclerview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#eff3f6" />
+
+        </com.toocms.dink5.mylibrary.view.MyTwinklingRefreshLayout>
+
+        <com.toocms.dink5.mylibrary.commonwidget.LoadingTip
+            android:id="@+id/loadedTip"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center" />
+    </RelativeLayout>
+
+</RelativeLayout>

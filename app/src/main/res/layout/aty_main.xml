@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.spkj.supai.MainActivity">
+
+    <FrameLayout
+        android:id="@+id/fralay_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/linlay_bottom"
+        android:background="#fff" />
+
+
+    <RelativeLayout
+        android:id="@+id/linlay_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="144px"
+        android:layout_alignParentBottom="true"
+        android:background="#fff"
+        android:gravity="center_vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/linlay_01"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/imgv_01"
+                    android:layout_width="54px"
+                    android:layout_height="54px"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="20px"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/ic_home_page_check" />
+
+                <TextView
+                    android:id="@+id/tv_01"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="20px"
+                    android:text="统计"
+                    android:textColor="#c8b08e"
+                    android:textSize="30px" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/linlay_02"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/imgv_02"
+                    android:layout_width="54px"
+                    android:layout_height="54px"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="20px"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/ic_home_order" />
+
+                <TextView
+                    android:id="@+id/tv_02"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="20px"
+                    android:text="订单"
+                    android:textColor="#666"
+                    android:textSize="30px" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/linlay_030"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/imgv_030"
+                    android:layout_width="54px"
+                    android:layout_height="54px"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="20px"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/ic_home_msg" />
+
+                <TextView
+                    android:id="@+id/tv_030"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="20px"
+                    android:text="消息"
+                    android:textColor="#666"
+                    android:textSize="30px" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linlay_03"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/imgv_03"
+                    android:layout_width="54px"
+                    android:layout_height="54px"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="20px"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/ic_home_cangku" />
+
+                <TextView
+                    android:id="@+id/tv_03"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="20px"
+                    android:text="仓库"
+                    android:textColor="#666"
+                    android:textSize="30px" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linlay_04"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/imgv_04"
+                    android:layout_width="54px"
+                    android:layout_height="54px"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="20px"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/ic_home_mine" />
+
+                <TextView
+                    android:id="@+id/tv_04"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="20px"
+                    android:text="我的"
+                    android:textColor="#666"
+                    android:textSize="30px" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#d9d9d9" />
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#fff"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="159px"
+        android:paddingLeft="40px"
+        android:paddingRight="40px">
+
+        <RelativeLayout
+            android:id="@+id/relay_back"
+            android:layout_width="100px"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="28px"
+                android:layout_height="50px"
+                android:layout_centerInParent="true"
+                android:scaleType="fitXY"
+                android:src="@drawable/ic_back3" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="我的账户"
+            android:textColor="#666"
+            android:textSize="52px"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="短信登录"
+            android:textColor="@color/main_color2"
+            android:textSize="43px"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_alignParentBottom="true"
+        android:background="#d9d9d9" />
+</LinearLayout>

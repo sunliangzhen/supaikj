@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="130px">
+
+
+            <ImageView
+                android:id="@+id/imgv_back"
+                android:layout_width="132px"
+                android:layout_height="132px"
+                android:layout_centerVertical="true"
+                android:scaleType="fitXY"
+                android:src="@drawable/lj_ic_back"
+                android:visibility="gone" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="店家登录"
+                android:textColor="#000"
+                android:textSize="45px" />
+
+            <TextView
+                android:id="@+id/tv_login_register"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="40px"
+                android:text="注册"
+                android:textColor="@color/main_color2"
+                android:textSize="43px" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_alignParentBottom="true"
+                android:background="#ededed" />
+
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="206px"
+            android:layout_height="214px"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="100px"
+            android:src="@drawable/lj_ic_logo" />
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginTop="200px"
+            android:background="#ededed" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="140px">
+
+            <ImageView
+                android:id="@+id/imgv_01"
+                android:layout_width="72px"
+                android:layout_height="72px"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="50px"
+                android:src="@drawable/lj_ic_login_phone" />
+
+            <EditText
+                android:id="@+id/edit_phone"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="30px"
+                android:layout_toRightOf="@id/imgv_01"
+                android:background="@null"
+                android:drawablePadding="12px"
+                android:gravity="center_vertical"
+                android:hint="手机号/店家编码"
+                android:inputType="phone"
+                android:maxLength="11"
+                android:maxLines="1"
+                android:textColor="#000"
+                android:textColorHint="#bababa"
+                android:textCursorDrawable="@drawable/shap_editext_c"
+                android:textSize="45px" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="50px"
+                android:background="#ededed" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="140px">
+
+            <ImageView
+                android:id="@+id/imgv_02"
+                android:layout_width="72px"
+                android:layout_height="72px"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="50px"
+                android:src="@drawable/lj_ic_login_pass" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="30px"
+                android:layout_toRightOf="@id/imgv_02"
+                android:background="@null"
+                android:drawablePadding="12px"
+                android:gravity="center_vertical"
+                android:hint="登录密码"
+                android:inputType="phone"
+                android:maxLength="11"
+                android:maxLines="1"
+                android:textColor="#000"
+                android:textColorHint="#bababa"
+                android:textCursorDrawable="@drawable/shap_editext_c"
+                android:textSize="45px" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_alignParentBottom="true"
+                android:background="#ededed" />
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50px"
+            android:layout_marginRight="50px"
+            android:layout_marginTop="70px">
+
+            <TextView
+                android:id="@+id/tv_login_forgetpass"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="忘记密码?"
+                android:textColor="@color/main_color2"
+                android:textSize="37px" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="通过短信验证码登录"
+                android:textColor="@color/main_color2"
+                android:textSize="37px" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_login"
+            android:layout_width="match_parent"
+            android:layout_height="120px"
+            android:layout_marginLeft="50px"
+            android:layout_marginRight="50px"
+            android:layout_marginTop="72px"
+            android:background="@drawable/shape_login"
+            android:gravity="center"
+            android:text="登录"
+            android:textColor="#fff"
+            android:textSize="45px" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="50px"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="登录拾鼎商家，即表示您以接受"
+                android:textColor="#bababa"
+                android:textSize="37px" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="《店家用户协议》"
+                    android:textColor="#000"
+                    android:textSize="37px" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="#000" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_color"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <include layout="@layout/in_head" />
+
+    <RelativeLayout
+        android:id="@+id/relay_head"
+        android:layout_width="match_parent"
+        android:layout_height="155px"
+        android:background="#fff"
+        android:paddingLeft="40px"
+        android:paddingRight="40px">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="头像"
+            android:textColor="#444"
+            android:textSize="43px" />
+
+        <ImageView
+            android:id="@+id/imgv_01"
+            android:layout_width="28px"
+            android:layout_height="50px"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_back1" />
+
+        <ImageView
+            android:id="@+id/imgv_head"
+            android:layout_width="115px"
+            android:layout_height="115px"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="40px"
+            android:layout_toLeftOf="@+id/imgv_01"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_head_set" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_alignParentBottom="true"
+            android:background="#d9d9d9" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relay_nickname"
+        android:layout_width="match_parent"
+        android:layout_height="155px"
+        android:background="#fff"
+        android:paddingLeft="40px"
+        android:paddingRight="40px">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="用户名"
+            android:textColor="#444"
+            android:textSize="43px" />
+
+        <ImageView
+            android:id="@+id/imgv_02"
+            android:layout_width="28px"
+            android:layout_height="50px"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_back1" />
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="40px"
+            android:layout_toLeftOf="@id/imgv_02"
+            android:text=""
+            android:textColor="#999"
+            android:textSize="43px" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_alignParentBottom="true"
+            android:background="#d9d9d9" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relay_resetphone"
+        android:layout_width="match_parent"
+        android:layout_height="155px"
+        android:background="#fff"
+        android:paddingLeft="40px"
+        android:paddingRight="40px">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="手机号"
+            android:textColor="#444"
+            android:textSize="43px" />
+
+        <ImageView
+            android:id="@+id/imgv_03"
+            android:layout_width="28px"
+            android:layout_height="50px"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_back1" />
+
+        <TextView
+            android:id="@+id/tv_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="40px"
+            android:layout_toLeftOf="@id/imgv_03"
+            android:text=""
+            android:textColor="#999"
+            android:textSize="43px" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_alignParentBottom="true"
+            android:background="#d9d9d9" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relay_about"
+        android:layout_width="match_parent"
+        android:layout_height="155px"
+        android:background="#fff"
+        android:paddingLeft="40px"
+        android:paddingRight="40px">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="关于我们"
+            android:textColor="#444"
+            android:textSize="43px" />
+
+        <ImageView
+            android:layout_width="28px"
+            android:layout_height="50px"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_back1" />
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_alignParentBottom="true"
+            android:background="#d9d9d9" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relay_repass"
+        android:layout_width="match_parent"
+        android:layout_height="155px"
+        android:background="#fff"
+        android:paddingLeft="40px"
+        android:paddingRight="40px">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="登录密码"
+            android:textColor="#444"
+            android:textSize="43px" />
+
+        <ImageView
+            android:id="@+id/imgv_04"
+            android:layout_width="28px"
+            android:layout_height="50px"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_back1" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="40px"
+            android:layout_toLeftOf="@id/imgv_04"
+            android:text="修改"
+            android:textColor="#999"
+            android:textSize="43px" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_outlogin"
+        android:layout_width="match_parent"
+        android:layout_height="144px"
+        android:layout_marginTop="100px"
+        android:background="#fff"
+        android:gravity="center"
+        android:text="退出当前用户"
+        android:textColor="#c8928d"
+        android:textSize="43px" />
+</LinearLayout>

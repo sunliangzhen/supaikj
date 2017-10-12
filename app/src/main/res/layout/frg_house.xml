@@ -1,0 +1,355 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="130px">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="仓库"
+            android:textColor="#000"
+            android:textSize="45px" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="40px"
+            android:text="现货明细"
+            android:textColor="#b2b2b2"
+            android:textSize="43px" />
+
+        <RelativeLayout
+            android:id="@+id/relay_now_order"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="40px">
+
+            <ImageView
+                android:id="@+id/imgv_house_k"
+                android:layout_width="60px"
+                android:layout_height="60px"
+                android:layout_marginLeft="10px"
+                android:scaleType="fitXY"
+                android:src="@drawable/lj_ic_house_01" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/imgv_house_k"
+                android:background="@drawable/tv_house_red"
+                android:gravity="center"
+                android:padding="7px"
+                android:text="10"
+                android:textColor="#fff"
+                android:textSize="25px" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/imgv_house_k"
+                android:gravity="center"
+                android:text="现货单"
+                android:textColor="#b2b2b2"
+                android:textSize="30px" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_alignParentBottom="true"
+            android:background="#ededed" />
+
+    </RelativeLayout>
+
+
+    <android.support.design.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipToPadding="false">
+
+        <android.support.design.widget.AppBarLayout
+            android:id="@+id/appbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <android.support.design.widget.CollapsingToolbarLayout
+                android:id="@+id/collapsing_toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#00000000"
+                app:contentScrim="@color/transparent"
+                app:expandedTitleMarginEnd="0dp"
+                app:expandedTitleMarginStart="0dp"
+                app:layout_scrollFlags="scroll|exitUntilCollapsed"
+                app:statusBarScrim="@color/transparent">
+
+                <com.zhy.autolayout.AutoRelativeLayout
+                    android:id="@+id/relay_top"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_collapseMode="parallax">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="730px">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="930px"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/lj_ic_house_bg" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="120px"
+                            android:text="我的仓库清单"
+                            android:textColor="#fff"
+                            android:textSize="100px" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="270px"
+                            android:layout_alignParentBottom="true"
+                            android:layout_marginBottom="80px"
+                            android:layout_marginLeft="40px"
+                            android:layout_marginRight="40px"
+                            android:background="@drawable/relay_shape_02"
+                            android:orientation="horizontal"
+                            android:visibility="visible">
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="center_vertical"
+                                android:orientation="vertical"
+                                android:paddingLeft="35px">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="7800.00"
+                                    android:textColor="#5DADB8"
+                                    android:textSize="55px"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="10px"
+                                    android:text="当前现货额"
+                                    android:textColor="#b2b2b2"
+                                    android:textSize="30px" />
+
+
+                                <ProgressBar
+                                    android:id="@+id/pb_progressbar"
+                                    style="@style/StyleProgressBarMini"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="10px"
+                                    android:layout_marginRight="30px"
+                                    android:layout_marginTop="15px"
+                                    android:background="@color/gray"
+                                    android:max="100"
+                                    android:progress="50" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="10px"
+                                    android:text="已售出货物额：￥2550.00"
+                                    android:textColor="#b2b2b2"
+                                    android:textSize="30px" />
+                            </LinearLayout>
+
+                            <View
+                                android:layout_width="1px"
+                                android:layout_height="match_parent"
+                                android:background="#dbdbdb" />
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="center_vertical"
+                                android:orientation="vertical"
+                                android:paddingLeft="35px">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="2"
+                                    android:textColor="#C56262"
+                                    android:textSize="55px"
+                                    android:textStyle="bold" />
+
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="10px"
+                                    android:text="当前缺货种类数"
+                                    android:textColor="#b2b2b2"
+                                    android:textSize="30px" />
+
+
+                                <ProgressBar
+                                    android:id="@+id/pb_progressbar2"
+                                    style="@style/StyleProgressBarMini2"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="10px"
+                                    android:layout_marginRight="30px"
+                                    android:layout_marginTop="15px"
+                                    android:background="@color/gray"
+                                    android:max="100"
+                                    android:progress="50" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="10px"
+                                    android:text="货物种类总数17种"
+                                    android:textColor="#b2b2b2"
+                                    android:textSize="30px" />
+                            </LinearLayout>
+                        </LinearLayout>
+
+                    </RelativeLayout>
+
+                </com.zhy.autolayout.AutoRelativeLayout>
+
+
+            </android.support.design.widget.CollapsingToolbarLayout>
+
+
+            <com.zhy.autolayout.AutoRelativeLayout
+                android:id="@+id/linlay_tab"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#fff"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="160px"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="种类"
+                        android:textColor="#2b2b2b"
+                        android:textSize="40px" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="销量额"
+                            android:textColor="#575757"
+                            android:textSize="40px" />
+
+                        <ImageView
+                            android:layout_width="48px"
+                            android:layout_height="48px"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/ic_house_desc" />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/tab_tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="剩余"
+                            android:textColor="#575757"
+                            android:textSize="40px" />
+
+                        <ImageView
+                            android:id="@+id/tab_imv"
+                            android:layout_width="48px"
+                            android:layout_height="48px"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/ic_house_desc" />
+
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="进货"
+                        android:textColor="#2b2b2b"
+                        android:textSize="40px" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_alignParentBottom="true"
+                    android:background="#dbdbdb" />
+            </com.zhy.autolayout.AutoRelativeLayout>
+
+
+        </android.support.design.widget.AppBarLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/viewpager"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="gone">
+
+            </android.support.v4.view.ViewPager>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclerview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#F4F5F6" />
+
+        </RelativeLayout>
+
+    </android.support.design.widget.CoordinatorLayout>
+</LinearLayout>

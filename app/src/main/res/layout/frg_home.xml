@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.spkj.supai.view.MySwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/swipeRefreshLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f0f0f0">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <android.support.design.widget.CoordinatorLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clipToPadding="false">
+
+            <android.support.design.widget.AppBarLayout
+                android:id="@+id/appbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <android.support.design.widget.CollapsingToolbarLayout
+                    android:id="@+id/collapsing_toolbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#00000000"
+                    app:contentScrim="@color/transparent"
+                    app:expandedTitleMarginEnd="64dp"
+                    app:expandedTitleMarginStart="48dp"
+                    app:layout_scrollFlags="scroll|exitUntilCollapsed"
+                    app:statusBarScrim="@color/transparent">
+
+                    <com.zhy.autolayout.AutoRelativeLayout
+                        android:id="@+id/relay_top"
+                        android:layout_width="match_parent"
+                        android:layout_height="606px"
+                        app:layout_collapseMode="parallax">
+
+                        <com.hejunlin.superindicatorlibray.LoopViewPager
+                            android:id="@+id/viewpager2"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent" />
+
+                        <com.hejunlin.superindicatorlibray.CircleIndicator
+                            android:id="@+id/indicator"
+                            android:layout_width="wrap_content"
+                            android:layout_height="60px"
+                            android:layout_alignParentBottom="true"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginBottom="30px"
+                            android:orientation="horizontal" />
+                    </com.zhy.autolayout.AutoRelativeLayout>
+
+                    <android.support.v7.widget.Toolbar
+                        android:id="@+id/toolbar"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:contentInsetStart="0dp"
+                        app:layout_collapseMode="pin">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <ImageView
+                                android:id="@+id/iv_location"
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="10dp"
+                                android:src="@drawable/ic_empty" />
+
+                            <RelativeLayout
+                                android:id="@+id/tv_city"
+                                android:layout_width="match_parent"
+                                android:layout_height="30dp"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginRight="20dp"
+                                android:layout_toRightOf="@id/iv_location"
+                                android:background="@drawable/shape_search">
+
+                            </RelativeLayout>
+                        </RelativeLayout>
+                    </android.support.v7.widget.Toolbar>
+
+                </android.support.design.widget.CollapsingToolbarLayout>
+
+
+                <android.support.design.widget.TabLayout
+                    android:id="@+id/sliding_tabs"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:background="#fff"
+                    app:tabBackground="@android:color/white"
+                    app:tabIndicatorColor="@color/main_color"
+                    app:tabIndicatorHeight="2dp"
+                    app:tabMode="fixed"
+                    app:tabSelectedTextColor="@color/main_color"
+                    app:tabTextAppearance="@style/MyTabLayoutTextAppearanceInverse2" />
+
+
+            </android.support.design.widget.AppBarLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+
+                <android.support.v4.view.ViewPager
+                    android:id="@+id/viewpager"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                </android.support.v4.view.ViewPager>
+
+
+                <com.toocms.dink5.mylibrary.commonwidget.LoadingTip
+                    android:id="@+id/loadingtip"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#f0f0f0" />
+            </RelativeLayout>
+
+        </android.support.design.widget.CoordinatorLayout>
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/imv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone" />
+
+</com.spkj.supai.view.MySwipeRefreshLayout>

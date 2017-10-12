@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#fff"
+    android:orientation="vertical">
+
+    <com.spkj.supai.view.AutoSwiMenuLayout
+        android:id="@+id/swipe"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff">
+
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="199px"
+            android:paddingLeft="40px"
+            android:paddingRight="40px">
+
+            <LinearLayout
+                android:id="@+id/linlay_01"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="42px">
+
+                <TextView
+                    android:id="@+id/item_tv_nickname"
+                    android:layout_width="110px"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="程婷"
+                    android:textColor="#444"
+                    android:textSize="43px" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="58px"
+                    android:text="189-1144-1125"
+                    android:textColor="#999"
+                    android:textSize="34px" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/linlay_01"
+                android:layout_marginTop="22px">
+
+                <TextView
+                    android:id="@+id/item_tv_time"
+                    android:layout_width="110px"
+                    android:layout_height="50px"
+                    android:background="@drawable/shap_01"
+                    android:gravity="center"
+                    android:text="默认"
+                    android:textColor="#c8b08e"
+                    android:textSize="34px"
+                    android:visibility="visible" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="58px"
+                    android:text="天津市南开区"
+                    android:textColor="#999"
+                    android:textSize="34px" />
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/item_tv_edit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:text="编辑"
+                android:textColor="#999"
+                android:textSize="34px"
+                android:textStyle="normal" />
+
+            <ImageView
+                android:layout_width="33px"
+                android:layout_height="33px"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="14px"
+                android:layout_toLeftOf="@id/item_tv_edit"
+                android:scaleType="fitXY"
+                android:src="@drawable/ic_edit" />
+
+        </com.zhy.autolayout.AutoRelativeLayout>
+
+        <Button
+            android:id="@+id/btnDelete"
+            android:layout_width="216px"
+            android:layout_height="match_parent"
+            android:background="#C8928D"
+            android:text="删除"
+            android:textColor="@android:color/white"
+            android:textSize="43px"
+            android:visibility="visible" />
+    </com.spkj.supai.view.AutoSwiMenuLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="30px"
+        android:background="@color/main_color" />
+
+</LinearLayout>
